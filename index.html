@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Harsh Singh</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css" />
+      <!-- UIkit JS -->
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="uk-navbar-container uk-visible@m" uk-navbar style="border-bottom-style: solid">
+
+    <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav">
+            <li>
+            	<a href=""><h3><strong>Harsh</strong></h3></a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav">
+            <li><a href='#'>Home</a></li>
+		    <li><a href='#about'>About</a></li>
+		    <li><a href='#skills'>Skills</a></li>
+		    <li><a href='#projects'>Projects</a></li>
+		    <li><a href='#Achievement'>Achievement</a></li>
+		    <li><a href='#training'>Training/Internship</a></li>
+        </ul>
+
+    </div>
+</nav>
+<!----------------------------------------------- off canvas -------------------------------------------------------------------->
+<nav class="uk-navbar-container uk-margin uk-hidden@m" uk-navbar>
+    <div class="uk-navbar-center">
+    	<ul class="uk-navbar-nav">
+            <li class="uk-active">
+            	<a href="#">
+            		<h1><strong style = 'color:red'>Harsh</strong></h1>
+            	</a>
+            </li>
+        </ul>
+    </div>
+
+
+<div class="uk-navbar-right">
+	<ul class="uk-navbar-nav">
+		<li>
+			<a uk-navbar-toggle-icon href="#offcanvas-nav-primary" uk-toggle></a>
+		</li>
+	</ul>
+</nav>
+<div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-margin-auto-vertical">
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Home</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#about"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span>About</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#skills"><span class="uk-margin-small-right" uk-icon="icon: table"></span>Skills</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#projects"><span class="uk-margin-small-right" uk-icon="icon: table"></span>Projects</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#Achievement"><span class="uk-margin-small-right" uk-icon="icon: table"></span>Achievement</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#training"><span class="uk-margin-small-right" uk-icon="icon: table"></span>Taining/Internship</a></li>
+        </ul>
+
+    </div>
+</div>
+<!--------------------------------------------------------Intro-------------------------------------------------------------------->
+<div uk-grid uk-height-viewport style="background-image: linear-gradient(to right, #37eafa , #33f537)" class="uk-padding-large">
+	<div class = 'uk-width-1-2@m uk-width-1-1@s'>
+			<h1><strong>Hi,</strong></h1>
+			<h1><strong>I am <span style="color:blue">Harsh</span>,</strong></h1>
+			<h1><strong>Full Stack <span style="color:blue">Django</span> Developer</strong></h1>
+			<div class = 'uk-inline'>
+				<a href="https://github.com/Harsh-singh586" uk-icon="icon: github;ratio : 2" class='uk-margin-right'></a>
+				<a href="https://www.linkedin.com/in/harsh-singh-940a62175" uk-icon="icon: linkedin;ratio : 2" class='uk-margin-right'></a>
+				<a href="mailto:singhharshhs586@gmail.com" uk-icon="icon: mail;ratio : 2" class='uk-margin-right'></a>
+				<a href="https://www.hackerrank.com/hslahd50" uk-icon="icon: code;ratio : 2"></a>
+			</div>
+    </div>
+    <div class = 'uk-width-1-2@m uk-width-1-1@s uk-flex uk-flex-middle uk-flex-center'>
+    	<center>
+    	<img data-src="harsh.png" width="300" height="300" alt="" uk-img>
+    	</center>
+    </div>
+</div>
+<!-----------------------------------------------------------------------About----------------------------------------------------->
+<div id = 'about' style = 'border-bottom-style: solid;border-width: 50px;border-color: lightblue' uk-height-viewport class="uk-padding-large"  uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true">
+	<center>
+		<h1 style = 'color:blue'><strong><u>About</u></strong></h1>
+	</center>
+	<div uk-grid class = 'uk-padding'>
+		<div class = 'uk-width-1-3@m uk-width-1-1@s'>
+			<img data-src="harsh.png" width="300" height="300" alt="" uk-img>
+		</div>
+		<div class = 'uk-width-2-3@m uk-width-1-1@s uk-padding-large'>
+			<h1><strong>I'm Harsh</strong></h1>
+			<p>I am currently pursuing B.Tech in Computer Science. I have interned with a mid-size company and was able to work closely with their Django developers. I also have a lot of experience with online code repositories, and I love to contribute as much as I can. Over time I have acquired relevant skills and experience. I have worked on many projects and completed many training to acquire various skills.</p>
+		</div>
+	</div>
+</div>
+<!----------------------------------------------------------------------Skills--------------------------------------------------->
+<div style = 'border-bottom-style: solid;border-width: 150px;border-color: lightblue' id = 'skills' uk-height-viewport class="uk-padding-large" uk-scrollspy="cls: uk-animation-fade;delay:500; repeat: true">
+	<center>
+		<h1 style = 'color:blue' class = 'uk-margin-large'><strong><u>Skills</u></strong></h1>
+	</center>
+	<div uk-grid>
+	<center class='uk-width-2-3@m uk-width-1-1@s'>
+	<div uk-grid class = 'uk-margin uk-width-2-3@m uk-width-1-1@s uk-flex uk-flex-left' style="border-bottom-style: solid;border-color: blue;border-width: 5px;box-shadow: 10px 10px 5px grey;">
+		<span class="uk-icon uk-icon-image uk-width-1-5"style="background-image: url(https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png);height: 3vw;"></span>
+             <h4><strong>HTML</strong></h4>
+    </div>
+    <div uk-grid class = 'uk-margin uk-width-2-3@m uk-width-1-1@s uk-flex uk-flex-left' style="border-bottom-style: solid;border-color: blue;border-width: 5px;box-shadow: 10px 10px 5px grey;">
+		<span class="uk-icon uk-icon-image uk-width-1-5"style="background-image: url(https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png);height: 3vw;"></span>
+             <h4><strong>CSS</strong></h4>
+    </div>
+    <div uk-grid class = 'uk-margin uk-width-2-3@m uk-width-1-1@s uk-flex uk-flex-left' style="border-bottom-style: solid;border-color: blue;border-width: 5px;box-shadow: 10px 10px 5px grey;">
+		<span class="uk-icon uk-icon-image uk-width-1-5"style="background-image: url(https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-social-logo.png);height: 3vw;"></span>
+             <h4><strong>Bootstrap</strong></h4>
+    </div>
+    <div uk-grid class = 'uk-margin uk-width-2-3@m uk-width-1-1@s uk-flex uk-flex-left' style="border-bottom-style: solid;border-color: blue;border-width: 5px;box-shadow: 10px 10px 5px grey;">
+		<span class="uk-icon uk-icon-image uk-width-1-5"style="background-image: url(https://cdn.uconnectlabs.com/wp-content/uploads/sites/25/2020/04/J.png);height: 3vw;"></span>
+             <h4><strong>JS</strong></h4>
+    </div>
+    <div uk-grid class = 'uk-margin uk-width-2-3@m uk-width-1-1@s uk-flex uk-flex-left' style="border-bottom-style: solid;border-color: blue;border-width: 5px;box-shadow: 10px 10px 5px grey;">
+		<span class="uk-icon uk-icon-image uk-width-1-5"style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png);height: 3vw;"></span>
+             <h4><strong>Python</strong></h4>
+    </div>
+    <div uk-grid class = 'uk-margin uk-width-2-3@m uk-width-1-1@s uk-flex uk-flex-left' style="border-bottom-style: solid;border-color: blue;border-width: 5px;box-shadow: 10px 10px 5px grey;">
+		<span class="uk-icon uk-icon-image uk-width-1-5"style="background-image: url(https://pbs.twimg.com/profile_images/1255113654049128448/J5Yt92WW_400x400.png);height: 3vw;"></span>
+             <h4><strong>My SQL</strong></h4>
+    </div>
+    <div uk-grid class = 'uk-margin uk-width-2-3@m uk-width-1-1@s uk-flex uk-flex-left' style="border-bottom-style: solid;border-color: blue;border-width: 5px;box-shadow: 10px 10px 5px grey;">
+		<span class="uk-icon uk-icon-image uk-width-1-5"style="background-image: url(https://image.shutterstock.com/image-vector/raster-round-icon-django-python-260nw-229869898.jpg);height: 3vw;"></span>
+             <h4><strong>Django</strong></h4>
+    </div>
+    </center>
+    <div class ='uk-width-1-3@m uk-height-large uk-width-large uk-visible@s' style="background-image: url('https://durhamcollege.ca/wp-content/uploads/Computer-Programmer.jpg');border-style: solid;border-radius: 10%"></div>
+</div>
+</div>
+<!------------------------------------------------------------------------------------------------------------>
+<div id = 'projects' uk-height-viewport class="uk-padding-large" uk-scrollspy="cls: uk-animation-fade;delay:500; repeat: true">
+	<center>
+		<h1 style = 'color:blue' class = 'uk-margin-large'><strong><u>Projects</u></strong></h1>
+	</center>
+	<div uk-grid>
+        <div class = 'uk-width-1-2@m uk-width-1-1@s'>
+		<div class="uk-card uk-card-default" style="box-shadow: 10px 10px 5px grey;">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-expand">
+			                <h3 class="uk-card-title uk-margin-remove-bottom">Stegnography</h3>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-body">
+			    	<ul>
+			        <li>Stegnography is a method to hide text in Media like Audio,Video or Image</li>
+			            <li>This project is able to hide Text of 100 caharacter inside an Image</li>
+			            <li>Used Python With File Handling</li>
+			            <li>Used Pyinstaller to Convert my project from .py to .exe</li>
+			         </ul>
+			    </div>
+			    <div class="uk-card-footer">
+			    	<a href="" uk-icon="icon: github;ratio : 3" class='uk-margin-right'></a>
+			        <a href="https://github.com/Harsh-singh586/Steganography" class="uk-button uk-button-text">View Code</a>
+			    </div>
+			</div>
+		</div>
+		<div class = 'uk-width-1-2@m uk-width-1-1@s'>
+		<div class="uk-card uk-card-default" style="box-shadow: 10px 10px 5px grey;">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-expand">
+			                <h3 class="uk-card-title uk-margin-remove-bottom">Payload For Windows</h3>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-body">
+			    	<ul>
+			        <li>Payload is Used as Malicious code to get access to someone Computers</li>
+			            <li>This project is able to run DOS-command , Transfer file from Victim PC to Hackers PC</li>
+			            <li>Used Python With Socket Programming and File Handling</li>
+			            <li>Used Pyinstaller to Convert my project from .py to .exe</li>
+			         </ul>
+			    </div>
+			    <div class="uk-card-footer">
+			    	<a href="" uk-icon="icon: github;ratio : 3" class='uk-margin-right'></a>
+			        <a href="https://github.com/Harsh-singh586/payload" class="uk-button uk-button-text">View Code</a>
+			    </div>
+			</div>
+				</div>
+</div>
+<div uk-grid>
+        <div class = 'uk-width-1-2@m uk-width-1-1@s'>
+		<div class="uk-card uk-card-default" style="box-shadow: 10px 10px 5px grey;">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-expand">
+			                <h3 class="uk-card-title uk-margin-remove-bottom">Memory Game</h3>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-body">
+			    	<img data-src="memory_game.png" width="300" height="300" alt="" uk-img>
+			    </div>	
+			    <div class="uk-card-footer">
+			    	<ul>
+			    	<li>
+			    	<a href="" uk-icon="icon: github;ratio : 3" class='uk-margin-right'></a>
+			        <a href="https://github.com/Harsh-singh586/memory_game" class="uk-button uk-button-text">View Code</a>
+			       </li>
+			       <hr>
+			       <li>
+			    	<a href="" uk-icon="icon: link;ratio : 3" class='uk-margin-right'></a>
+			        <a href="game/game.html" class="uk-button uk-button-text">View Project</a>
+			       </li>
+			       </ul>
+			    </div>
+			</div>
+		</div>
+		<div class = 'uk-width-1-2@m uk-width-1-1@s'>
+		<div class="uk-card uk-card-default" style="box-shadow: 10px 10px 5px grey;">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-expand">
+			                <h3 class="uk-card-title uk-margin-remove-bottom">Flipbird</h3>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-body">
+			    	<img data-src="flipbird.png" width="300" height="300" alt="" uk-img>
+			    </div>
+			    <div class="uk-card-footer">
+			    	<ul>
+			    	<li>
+			    	<a href="" uk-icon="icon: github;ratio : 3" class='uk-margin-right'></a>
+			        <a href="https://github.com/Harsh-singh586/Flipbird" class="uk-button uk-button-text">View Code</a>
+			       </li>
+			       <hr>
+			       <li>
+			    	<a href="" uk-icon="icon: link;ratio : 3" class='uk-margin-right'></a>
+			        <a href="flipbird1/flipbird.html?i=1" class="uk-button uk-button-text">View Project</a>
+			       </li>
+			       </ul>
+			    </div>
+			</div>
+				</div>
+</div>
+<div uk-grid>
+        <div class = 'uk-width-1-2@m uk-width-1-1@s'>
+		<div class="uk-card uk-card-default" style="box-shadow: 10px 10px 5px grey;">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-expand">
+			                <h3 class="uk-card-title uk-margin-remove-bottom">PASTEBIN</h3>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-body">
+			    	<img data-src="pastebin.png" width="300" height="300" alt="" uk-img>
+			    </div>	
+			    <div class="uk-card-footer">
+			    	<ul>
+			    	<li>
+			    	<a href="" uk-icon="icon: github;ratio : 3" class='uk-margin-right'></a>
+			        <a href="https://github.com/Harsh-singh586/pastebin" class="uk-button uk-button-text">View Code</a>
+			       </li>
+			       <hr>
+			       <li>
+			    	<a href="" uk-icon="icon: link;ratio : 3" class='uk-margin-right'></a>
+			        <a href="http://harshsingh586.pythonanywhere.com/" class="uk-button uk-button-text">View Project</a>
+			       </li>
+			       </ul>
+			    </div>
+			</div>
+		</div>
+		<div class = 'uk-width-1-2@m uk-width-1-1@s'>
+		<div class="uk-card uk-card-default" style="box-shadow: 10px 10px 5px grey;">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-expand">
+			                <h3 class="uk-card-title uk-margin-remove-bottom">COVID19 UPDATE</h3>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-body">
+			    	<img data-src="covid.png" width="250" height="250" alt="" uk-img>
+			    </div>
+			    <div class="uk-card-footer">
+			    	<ul>
+			    	<li>
+			    	<a href="" uk-icon="icon: github;ratio : 3" class='uk-margin-right'></a>
+			        <a href="https://github.com/Harsh-singh586/covid19update" class="uk-button uk-button-text">View Code</a>
+			       </li>
+			       <hr>
+			       <li>
+			    	<a href="" uk-icon="icon: link;ratio : 3" class='uk-margin-right'></a>
+			        <a href="https://covid19update.pythonanywhere.com/" class="uk-button uk-button-text">View Project</a>
+			       </li>
+			       </ul>
+			    </div>
+			</div>
+				</div>
+</div>
+<div uk-grid>
+        <div class = 'uk-width-1-2@m uk-width-1-1@s'>
+		<div class="uk-card uk-card-default" style="box-shadow: 10px 10px 5px grey;">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-expand">
+			                <h3 class="uk-card-title uk-margin-remove-bottom">COVID19 Resource</h3>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-body">
+			    	<img data-src="fightcovidindia.png" width="300" height="300" alt="" uk-img>
+			    </div>	
+			    <div class="uk-card-footer">
+			    	<ul>
+			    	<li>
+			    	<a href="" uk-icon="icon: github;ratio : 3" class='uk-margin-right'></a>
+			        <a href="https://github.com/Harsh-singh586/fightcovidindia" class="uk-button uk-button-text">View Code</a>
+			       </li>
+			       <hr>
+			       <li>
+			    	<a href="" uk-icon="icon: link;ratio : 3" class='uk-margin-right'></a>
+			        <a href="https://fightcovidindia.herokuapp.com/" class="uk-button uk-button-text">View Project</a>
+			       </li>
+			       </ul>
+			    </div>
+			</div>
+		</div>
+</div>
+</div>
+<!--------------------------------------------------------------------------------------------------------------------------->
+<div id = 'Achievement' style = 'border-bottom-style: solid;border-width: 50px;border-color: lightblue' uk-height-viewport class="uk-padding-large"  uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true">
+	<center>
+		<h1 style = 'color:blue'><strong><u>Achievement</u></strong></h1>
+	</center>
+	<div uk-grid>
+        <div class = 'uk-width-1-2@m uk-width-1-1@s'>
+		<div class="uk-card uk-card-default" style="box-shadow: 10px 10px 5px grey;">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-expand">
+			                <h3 class="uk-card-title uk-margin-remove-bottom">Hacktoberfest 2019</h3>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-body">
+			    	<ul>
+			        <img data-src="https://camo.githubusercontent.com/ffffac93976ea8b676147999fc20ce87cdfa66110ee32bd42f3df20501707479/68747470733a2f2f6861636b746f6265726665737431392e756373636d6f7a696c6c612e636f6d2f696d672f68666c6f676f2e737667" width="200" height="200" alt="" uk-img>
+			         </ul>
+			    </div>
+			    <div class="uk-card-footer">
+			    	<p>Completed Hacktoberfest 2019</p>
+			    	<p>Contributed in 5 Respo and had Experience with Open Source</p>
+			    </div>
+			</div>
+		</div>
+		<div class = 'uk-width-1-2@m uk-width-1-1@s'>
+		<div class="uk-card uk-card-default" style="box-shadow: 10px 10px 5px grey;">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-expand">
+			                <h3 class="uk-card-title uk-margin-remove-bottom">Python Certificate</h3>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-body">
+			    	<ul>
+			        <img data-src="Hackerrank_python.png" height="200" width = '200' alt="" uk-img>
+			         </ul>
+			    </div>
+			    <div class="uk-card-footer">
+			    <p>Completed Python Certification from Hackerrank</p>
+			    </div>
+			</div>
+				</div>
+</div>
+<div uk-grid>
+        <div class = 'uk-width-1-2@m uk-width-1-1@s'>
+		<div class="uk-card uk-card-default" style="box-shadow: 10px 10px 5px grey;">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-expand">
+			                <h3 class="uk-card-title uk-margin-remove-bottom">Hackerrank Algorithm</rimth>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-body">
+			    	<ul>
+			        <img data-src="https://s3.amazonaws.com/sr-marketplace-prod/wp-content/uploads/2015/08/hackerrank.jpg" width="200" height="200" alt="" uk-img>
+			         </ul>
+			    </div>
+			    <div class="uk-card-footer">
+			    	<p>Got 6 star in Data Structure and Algorithm on Hackerrank</p>
+			    </div>
+			</div>
+		</div>
+		<div class = 'uk-width-1-2@m uk-width-1-1@s'>
+		<div class="uk-card uk-card-default" style="box-shadow: 10px 10px 5px grey;">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-expand">
+			                <h3 class="uk-card-title uk-margin-remove-bottom">GJUST Coders Club</h3>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-body">
+			    	<ul>
+			        <img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv6o_RAoqfZm1QbfnwNRXs5xRACkZyC-jUGg&usqp=CAU" width = '200' height="200"  alt="" uk-img>
+			         </ul>
+			    </div>
+			    <div class="uk-card-footer">
+			    	<p>Ranked First Twice in Coding Competetion Held for University Level</p>
+			    </div>
+			</div>
+				</div>
+</div>
+</div>
+<!----------------------------------------------------------------------------------------------------------------->
+<div id = 'training' style = 'border-bottom-style: solid;border-width: 50px;border-color: lightblue' uk-height-viewport class="uk-padding-large"  uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true">
+	<center>
+		<h1 style = 'color:blue'><strong><u>Training/Internship</u></strong></h1>
+	</center>
+	<div uk-grid>
+        <div class = 'uk-width-1-2@m uk-width-1-1@s'>
+		<div class="uk-card uk-card-default" style="box-shadow: 10px 10px 5px grey;">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-expand">
+			                <h3 class="uk-card-title uk-margin-remove-bottom">Codequest Python Training</h3>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-body">
+			    	<ul>
+			        <img data-src="Harsh Kumar Singh CCP.png" width="200" height="200" alt="" uk-img>
+			         </ul>
+			    </div>
+			    <div class="uk-card-footer">
+			    	<p>Completed Python Training from CodeQuest Powered by Microsoft</p>
+			    </div>
+			</div>
+		</div>
+		<div class = 'uk-width-1-2@m uk-width-1-1@s'>
+		<div class="uk-card uk-card-default" style="box-shadow: 10px 10px 5px grey;">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-expand">
+			                <h3 class="uk-card-title uk-margin-remove-bottom">Python Certificate</h3>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-body">
+			    	<ul>
+			        <img data-src="Harsh Kumar Singh COI.png" height="200" width = '200' alt="" uk-img>
+			         </ul>
+			    </div>
+			    <div class="uk-card-footer">
+			    <p>Completed Python Internship in Codequest</p>
+			    </div>
+			</div>
+				</div>
+</div>
+<div uk-grid>
+        <div class = 'uk-width-1-2@m uk-width-1-1@s'>
+		<div class="uk-card uk-card-default" style="box-shadow: 10px 10px 5px grey;">
+			    <div class="uk-card-header">
+			        <div class="uk-grid-small uk-flex-middle" uk-grid>
+			            <div class="uk-width-expand">
+			                <h3 class="uk-card-title uk-margin-remove-bottom">Django Internship</h3>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="uk-card-body">
+			    	<ul>
+			        <img data-src="extravagant.png" width="200" height="200" alt="" uk-img>
+			         </ul>
+			    </div>
+			    <div class="uk-card-footer">
+			    	<p>Completed Django Internship in Extravagant Media.</p>
+			    	<p>Worked as a Full Stack Django Developer.</p>
+			    	<p>Develop a Blog Application for them.</p>
+			    </div>
+			</div>
+		</div>
+		<div class = 'uk-width-1-2@m uk-width-1-1@s'>
+				</div>
+</div>
+</div>
+</body>
+</html>

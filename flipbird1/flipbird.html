@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+#dwn{
+   visibility:hidden;
+   float:right;
+    }
+#up{
+   visibility:hidden;
+   float:left;
+    }
+#fire{
+   visibility:hidden;
+    }
+#myAudio{
+   visibility:hidden;
+    }
+
+</style>
+<script src="game1.js"></script>
+<script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body onload="ins()">
+<div class="col-12" style="background-color:red;height:50px;">
+<center style="color:yellow;font-weight:bold;font-size:30px">Flip Bird</center>
+</div>
+<div class="jumbotron col-12" style="height:30vw;">
+<div id="bird" style="height:4vw;width:4vw;background-color:red;top:10vw;left:3vw;position:absolute;"></div>
+<div id="protect" style="height:30vw;width:1vw;background-color:blue;top:0vw;left:7vw;position:absolute;visibility:hidden"></div>
+<div id="a1" style="width:2vw;height:15vw;background-color:yellow;top:0px;left:30vw;position:absolute;"></div>
+<div id="a2" style="width:2vw;height:8vw;background-color:yellow;bottom:0px;left:30vw;position:absolute;"></div>
+<div id="b1" style="width:2vw;height:8vw;background-color:yellow;top:0px;left:50vw;position:absolute"></div>
+<div id="b2" style="width:2vw;height:15vw;background-color:yellow;bottom:0px;left:50vw;position:absolute"></div>
+<div id="c1" style="width:2vw;height:15vw;background-color:yellow;top:0px;left:70vw;position:absolute"></div>
+<div id="c2" style="width:2vw;height:8vw;background-color:yellow;bottom:0px;left:70vw;position:absolute"></div>
+<div id="d1" style="width:2vw;height:14vw;background-color:yellow;top:0px;left:90vw;position:absolute"></div>
+<div id="d2" style="width:2vw;height:9vw;background-color:yellow;bottom:0px;left:90vw;position:absolute"></div>
+</div>
+<div class="col-12" style="background-color:red;height:30px;">
+<div id="score" style="top:0px;position:absolute;font-weight:bold;color:white;">SCORE:0</div>
+<div id="level" style="top:0px;position:absolute;font-weight:bold;color:white;left:80vw;">LEVEL:0</div>
+<center id="proc" style="font-weight:bold;color:white;">LIFELINE:0</center>
+</div>
+<button id="play" onclick=myMove() type="button" class="btn btn-primary">Play</button>
+<button id="rld" onclick=location.reload() type="button" class="btn btn-primary" style="visibility:hidden;">Play Again</button>
+</br></br>
+<div>
+<center>
+<div>
+<button id="up" onclick=Up() type="button" class="btn btn-primary">UP</button>
+<button id="dwn" onclick=Down() type="button" class="btn btn-primary">Down</button>
+</div>
+<br><br>
+<button id="fire" onclick=fire() type="button" class="btn btn-primary">Protect</button>
+</center>
+<audio loop controls id="myAudio"><source src="bg.mp3" type="audio/mpeg"></audio>
+
+
+
+
+</body>
+</html>

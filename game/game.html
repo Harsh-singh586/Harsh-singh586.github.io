@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+       .header{
+              height:60px;
+              background-color:red;
+              color:white;
+              font-weight:bold;
+              font-size:30px
+              }
+      .x
+            {
+             top:1vw;
+             position:relative;
+             }
+      #won{
+           position:absolute;
+           left:55vw;
+           top:25vw;  
+           background-color:red;
+           z-index:2;
+           font-weight:bold;
+           font-size:50px;
+           color:white;
+           visibility:hidden; 
+          }
+    #cong{
+           position:absolute;
+           left:47vw;
+           top:40vw;  
+           background-color:red;
+           z-index:2;
+           font-weight:bold;
+           font-size:50px;
+           color:white;
+           width:230px;
+           visibility:hidden;
+          }
+</style>
+<script src="myscript.js"></script>
+</head>
+<body>
+<div id="won">WON</div>
+<div id="cong"></div>
+   <div class="container col-sm-12 header">
+     <div class="container" style="top:10px;left:40vw;position:absolute;width:180px;">FLIPP IT</div>
+      <div class="container" id="mov" style="background-color:green;left:70vw;position:absolute;width:180px">MOVES:0</div>
+   </div>
+<div class="row x">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="a">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="b">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="c">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="d">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="e">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="f">
+</div>
+<div class="row x">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="a1">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="b1">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="c1">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="d1">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="e1">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="f1">
+</div>
+<div class="row x">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="a2">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="b2">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="c2">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="d2">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="e2">
+   <img onclick=fn(this.id) src="hackcover.png" class="img-thumbnail col-2" id="f2">
+</div><br><br>
+<center><button id="rld" onclick=location.reload() type="button" class="btn btn-primary">Play Again</button></center>
+</body>
+</html>
